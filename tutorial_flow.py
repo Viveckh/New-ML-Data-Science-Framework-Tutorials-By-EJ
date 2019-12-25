@@ -32,7 +32,7 @@ class GenreStatsFlow(FlowSpec):
                              
     max_genres = Parameter('max_genres',
                 help="The max number of genres to return statistics for",
-                default=5)$
+                default=5)
 
     @conda(libraries={'pandas' : '0.24.2'})
     @step
