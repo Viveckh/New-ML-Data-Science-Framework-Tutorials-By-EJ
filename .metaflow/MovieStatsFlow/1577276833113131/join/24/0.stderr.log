@@ -1,0 +1,31 @@
+<flow MovieStatsFlow step join> failed:
+    Internal error
+Traceback (most recent call last):
+  File "/tmp/tmpq09ygjgt/metaflow/cli.py", line 853, in main
+    start(auto_envvar_prefix='METAFLOW', obj=state)
+  File "/Users/viveckh/opt/miniconda3/envs/metaflow_MovieStatsFlow_osx-64_d1c019f35cd05ccf3d7d52b68ce106518be25ba7/lib/python3.7/site-packages/click/core.py", line 764, in __call__
+    return self.main(args, kwargs)
+  File "/Users/viveckh/opt/miniconda3/envs/metaflow_MovieStatsFlow_osx-64_d1c019f35cd05ccf3d7d52b68ce106518be25ba7/lib/python3.7/site-packages/click/core.py", line 717, in main
+    rv = self.invoke(ctx)
+  File "/Users/viveckh/opt/miniconda3/envs/metaflow_MovieStatsFlow_osx-64_d1c019f35cd05ccf3d7d52b68ce106518be25ba7/lib/python3.7/site-packages/click/core.py", line 1137, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/Users/viveckh/opt/miniconda3/envs/metaflow_MovieStatsFlow_osx-64_d1c019f35cd05ccf3d7d52b68ce106518be25ba7/lib/python3.7/site-packages/click/core.py", line 956, in invoke
+    return ctx.invoke(self.callback, ctx.params)
+  File "/Users/viveckh/opt/miniconda3/envs/metaflow_MovieStatsFlow_osx-64_d1c019f35cd05ccf3d7d52b68ce106518be25ba7/lib/python3.7/site-packages/click/core.py", line 555, in invoke
+    return callback(args, kwargs)
+  File "/Users/viveckh/opt/miniconda3/envs/metaflow_MovieStatsFlow_osx-64_d1c019f35cd05ccf3d7d52b68ce106518be25ba7/lib/python3.7/site-packages/click/decorators.py", line 27, in new_func
+    return f(get_current_context().obj, args, kwargs)
+  File "/tmp/tmpq09ygjgt/metaflow/cli.py", line 430, in step
+    max_user_code_retries)
+  File "/tmp/tmpq09ygjgt/metaflow/task.py", line 373, in run_step
+    self._exec_step_function(step_func, input_obj)
+  File "/tmp/tmpq09ygjgt/metaflow/task.py", line 49, in _exec_step_function
+    step_function(input_obj)
+  File "tutorial_flow.py", line 103, in join
+    for inp in inputs}
+  File "tutorial_flow.py", line 103, in <dictcomp>
+    for inp in inputs}
+  File "/tmp/tmpq09ygjgt/metaflow/flowspec.py", line 128, in __getattr__
+    (self.name, name))
+AttributeError: Flow MovieStatsFlow has no attribute 'quartiles'
+

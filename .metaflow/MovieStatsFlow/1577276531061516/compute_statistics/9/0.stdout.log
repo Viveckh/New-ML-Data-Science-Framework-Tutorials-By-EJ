@@ -1,0 +1,16 @@
+Computing statistics for History
+@catch caught an exception from <flow MovieStatsFlow step compute_statistics[7] (input: History)>
+>  Traceback (most recent call last):
+>    File "/tmp/tmp5ltw43_7/metaflow/task.py", line 390, in run_step
+>      self._exec_step_function(step_func)
+>    File "/tmp/tmp5ltw43_7/metaflow/task.py", line 47, in _exec_step_function
+>      step_function()
+>    File "tutorial_flow.py", line 81, in compute_statistics
+>      selector = self.dataframe['genres'].\
+>    File "/tmp/tmp5ltw43_7/metaflow/flowspec.py", line 122, in __getattr__
+>      x = self._datastore[name]
+>    File "/tmp/tmp5ltw43_7/metaflow/datastore/datastore.py", line 571, in __getitem__
+>      return self._load_object(self.objects[var])
+>    File "/tmp/tmp5ltw43_7/metaflow/datastore/datastore.py", line 453, in _load_object
+>      return pickle.loads(blob)
+>  ModuleNotFoundError: No module named 'pandas'

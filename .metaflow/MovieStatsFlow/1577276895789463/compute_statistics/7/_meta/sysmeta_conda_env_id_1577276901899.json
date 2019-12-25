@@ -1,0 +1,1 @@
+{"flow_id": "MovieStatsFlow", "run_number": "1577276895789463", "step_name": "compute_statistics", "task_id": "7", "field_name": "conda_env_id", "type": "conda_env_id", "value": "metaflow_MovieStatsFlow_osx-64_a16a6558f0f7e38f9dc5c1710698eb0502737dc2", "user_name": "viveckh", "ts_epoch": 1577276901899}
