@@ -1,1 +1,0 @@
-{"run_number": "1577276895789463", "step_name": "compute_statistics", "task_id": "20", "flow_id": "MovieStatsFlow", "user_name": "viveckh", "tags": [], "system_tags": ["user:viveckh", "runtime:dev", "python_version:3.7.4", "date:2019-12-25", "metaflow_version:2.0.1"], "ts_epoch": 1577276910099}

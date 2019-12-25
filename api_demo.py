@@ -4,7 +4,7 @@ from metaflow import Flow, get_metadata
 print("Using metadata provider: %s" % get_metadata())
 
 # Load the analysis from the MovieStatsFlow.
-run = Flow('MovieStatsFlow').latest_successful_run
+run = Flow('GenreStatsFlow').latest_successful_run
 print("Using analysis from '%s'" % str(run))
 
 genre_stats = run.data.genre_stats

@@ -1,1 +1,0 @@
-{"flow_id": "LinearFlow", "run_number": "1577205505618992", "step_name": "a", "task_id": "2", "field_name": "log_location_stdout", "type": "log_path", "value": "{\"ds_type\": \"local\", \"location\": \"/CodeForLyf/metaflow-tutorial/.metaflow/LinearFlow/1577205505618992/a/2/0.stdout.log\", \"attempt\": 0}", "user_name": "viveckh", "ts_epoch": 1577205506341}

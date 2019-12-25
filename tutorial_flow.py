@@ -15,7 +15,7 @@ def get_python_version():
 
 # Use the specified version of python for this flow.
 @conda_base(python=get_python_version())
-class MovieStatsFlow(FlowSpec):
+class GenreStatsFlow(FlowSpec):
     """
     A flow to generate some statistics about the movie genres.
 
@@ -30,9 +30,9 @@ class MovieStatsFlow(FlowSpec):
                              help="The path to a movie metadata file.",
                              default = 'movies.csv')
                              
-    maxgenres = Parameter('maxgenres',
+    max_genres = Parameter('max_genres',
                 help="The max number of genres to return statistics for",
-                default=5)
+                default=5)$
 
     @conda(libraries={'pandas' : '0.24.2'})
     @step
@@ -97,7 +97,7 @@ class MovieStatsFlow(FlowSpec):
         Join our parallel branches and merge results into a dictionary.
 
         """
-        inputs = inputs[0:self.maxgenres]
+        inputs = inputs[0:self.max_genres]
         # Merge results from the genre specific computations.
         self.genre_stats = {inp.genre.lower(): \
                             {'quartiles': inp.quartiles,
@@ -116,4 +116,4 @@ class MovieStatsFlow(FlowSpec):
 
 
 if __name__ == '__main__':
-    MovieStatsFlow()
+    GenreStatsFlow()
